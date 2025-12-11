@@ -12,19 +12,21 @@
         "@nuxt/scripts": "0.13.0",
         "@nuxt/ui": "4.2.1",
         "@stylistic/eslint-plugin": "^5.6.1",
-        "@unhead/vue": "^2.0.3",
+        "@unhead/vue": "^2.0.19",
         "better-sqlite3": "^12.5.0",
-        "eslint": "^9.0.0",
+        "eslint": "^9.39.1",
         "eslint-plugin-oxlint": "^1.32.0",
         "nuxt": "^4.2.2",
         "oxlint": "^1.32.0",
         "tailwindcss": "^4.1.17",
         "typescript": "^5.9.3",
-        "vite": "npm:rolldown-vite@^7.2.0",
+        "vite": "npm:rolldown-vite@^7.2.10",
         "vue": "^3.5.25",
         "vue-router": "^4.6.3",
       },
       "devDependencies": {
+        "@iconify-json/lucide": "^1.2.79",
+        "@iconify-json/simple-icons": "^1.2.62",
         "vue-tsc": "^3.1.8",
       },
     },
@@ -206,6 +208,10 @@
     "@humanwhocodes/module-importer": ["@humanwhocodes/module-importer@1.0.1", "", {}, "sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA=="],
 
     "@humanwhocodes/retry": ["@humanwhocodes/retry@0.4.3", "", {}, "sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ=="],
+
+    "@iconify-json/lucide": ["@iconify-json/lucide@1.2.79", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-CcwoXfC2Y7UVW0PXopmXtB4Do/eUJkhAqQqOnVENEiw3FwU707TK4uyIUqdo9tlvBaFBl95wnJf3smqsTnSyKA=="],
+
+    "@iconify-json/simple-icons": ["@iconify-json/simple-icons@1.2.62", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-GpWQ294d4lraB3D2eBSSMROh1x9uKgpmyereLlGzVQjGZ7lbeFzby2ywXxyp4vEODmTDyf1/4WcOYs/yH4rJ5Q=="],
 
     "@iconify/collections": ["@iconify/collections@1.0.627", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-IG6Gv+JQJEyJxwrKjOIpOizUzK82RrpDI2Rk92iTJWbfK3hY+LrBK6YhjXT3b9zAN5wYqseCpPznQHgRacmogg=="],
 

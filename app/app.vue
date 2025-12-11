@@ -2,6 +2,8 @@
   <UApp>
     <NuxtLoadingIndicator />
 
+    <AppHeader />
+
     <UMain>
       <NuxtLayout>
         <NuxtPage />
