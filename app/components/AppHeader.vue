@@ -86,14 +86,13 @@ const items = ref([
   {
     label: "GitHub",
     icon: "i-simple-icons-github",
-    badge: "3.8k",
     to: "https://github.com/skylafalls/fg-exp",
     target: "_blank",
   },
   {
-    label: "Help",
+    label: "About",
     icon: "i-lucide-circle-help",
-    disabled: true,
+    to: "/about",
   },
 ] satisfies NavigationMenuItem[]);
 </script>
