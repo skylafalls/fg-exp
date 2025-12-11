@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from "@nuxt/ui";
 
-const items = ref([
+const itemsLeft = ref([
   {
     label: "Charts",
     icon: "i-lucide-book-open",
@@ -83,6 +83,9 @@ const items = ref([
       },
     ],
   },
+] satisfies NavigationMenuItem[]);
+
+const itemsRight = ref([
   {
     label: "GitHub",
     icon: "i-simple-icons-github",
@@ -98,5 +101,12 @@ const items = ref([
 </script>
 
 <template>
-  <UNavigationMenu :items="items" />
+  <UHeader>
+    <template #left>
+      <UNavigationMenu :items="itemsLeft"/>
+    </template>
+    <template #right>
+      <UNavigationMenu :items="itemsRight"/>
+    </template>
+  </UHeader>
 </template>
