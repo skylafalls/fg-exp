@@ -12,7 +12,7 @@ export default defineAppConfig({
     },
   },
   seo: {
-    siteName: "Nuxt Docs Template",
+    siteName: "The FG Expansion Spreadsheet",
   },
   header: {
     title: "",
