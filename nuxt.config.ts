@@ -6,6 +6,16 @@ export default defineNuxtConfig({
     dirs: ["app/globals"],
   },
 
+  nitro: {
+    prerender: {
+      routes: [
+        "/",
+      ],
+      crawlLinks: true,
+      autoSubfolderIndex: false,
+    },
+  },
+
   css: ["~/assets/css/main.css"],
   modules: [
     "@nuxt/content",

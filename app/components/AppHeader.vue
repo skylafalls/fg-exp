@@ -98,6 +98,8 @@ const itemsRight = ref([
     to: "/about",
   },
 ] satisfies NavigationMenuItem[]);
+
+const { header } = useAppConfig();
 </script>
 
 <template>
@@ -106,6 +108,7 @@ const itemsRight = ref([
       <UNavigationMenu :items="itemsLeft"/>
     </template>
     <template #right>
+      <UColorModeButton v-if="header?.colorMode" />
       <UNavigationMenu :items="itemsRight"/>
     </template>
   </UHeader>
