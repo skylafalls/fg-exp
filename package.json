@@ -1,5 +1,7 @@
 {
   "name": "fg-exp",
+  "description": "The FG Expansion \"Spreadsheet\" (except it's a website)",
+  "version": "3.0.0-alpha.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -13,19 +15,14 @@
   },
   "dependencies": {
     "@nuxt/content": "3.9.0",
-    "@nuxt/eslint": "1.12.1",
     "@nuxt/hints": "1.0.0-alpha.3",
     "@nuxt/image": "2.0.0",
     "@nuxt/scripts": "0.13.0",
     "@nuxt/ui": "4.2.1",
-    "@stylistic/eslint-plugin": "^5.6.1",
     "@unhead/vue": "^2.0.19",
     "better-sqlite3": "^12.5.0",
-    "eslint": "^9.39.1",
-    "eslint-plugin-oxlint": "^1.32.0",
     "node-gyp": "^12.1.0",
     "nuxt": "^4.2.2",
-    "oxlint": "^1.32.0",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
     "vue": "^3.5.25",
@@ -33,6 +30,11 @@
     "vite": "npm:rolldown-vite@^7.2.10"
   },
   "devDependencies": {
+    "@nuxt/eslint": "1.12.1",
+    "@stylistic/eslint-plugin": "^5.6.1",
+    "eslint-plugin-oxlint": "^1.32.0",
+    "oxlint": "^1.32.0",
+    "eslint": "^9.39.1",
     "@iconify-json/lucide": "^1.2.79",
     "@iconify-json/simple-icons": "^1.2.62",
     "vue-tsc": "^3.1.8"
