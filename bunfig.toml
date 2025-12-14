@@ -1,4 +1,3 @@
 [install]
 # wait at least a day
 minimumReleaseAge = 86400
-linker  = "isolated"
