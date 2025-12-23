@@ -1,10 +1,10 @@
 <template>
   <UContainer v-if="post">
-    <h1>{{ post.name }}</h1>
-    <p><b>Description:</b> {{ post.description }}</p>
-    <ul>
-      <li>Abmetric Index: [{{ post.abmetricIndex.toFixed(2) }}]</li>
-    </ul>
+    <UPageHeader
+      :title="post.name"
+      :description="post.description"
+    />
+    <p>Abmetric Index: [{{ post.abmetricIndex.toFixed(2) }}]</p>
   </UContainer>
   <UContainer v-else>
     <h1>sorry</h1>
