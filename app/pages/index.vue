@@ -1,8 +1,8 @@
 <template>
   <div>
     <UPageHero
-      title="Nuxt Starter Template"
-      description="A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours."
+      title="The FG Expansion Spreadsheet"
+      description="The third revision of the Fictional Googology community's most reliable source of entries. Now no longer just a Google Spreadsheet."
       :links="[{
         label: 'Get started',
         to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',

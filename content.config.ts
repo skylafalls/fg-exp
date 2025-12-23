@@ -7,10 +7,10 @@ export default defineContentConfig({
       source: "**/*.md",
     }),
     numbers: defineCollection({
-      type: "page",
-      source: "content/entries/*.md",
+      type: "data",
+      source: "content/entries/*.yml",
       schema: z.strictObject({
-        milestone: z.enum([
+        milestone: z.optional(z.enum([
           "none",
           "minor",
           "important",
@@ -22,7 +22,7 @@ export default defineContentConfig({
           "mythical",
           "absolute",
           "primordial",
-        ]),
+        ])),
         name: z.string(),
         description: z.string(),
         abmetricIndex: z.number(),
