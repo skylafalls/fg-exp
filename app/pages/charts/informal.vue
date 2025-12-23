@@ -7,7 +7,7 @@
     <UPageList divide>
       <li>
         <ul v-for="entry in entries" :key="entry.name">
-          {{ entry.name }}
+          <NuxtLink :to="`/${entry.stem}`">{{ entry.name }}</NuxtLink>
         </ul>
       </li>
     </UPageList>

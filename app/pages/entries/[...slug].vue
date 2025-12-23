@@ -1,21 +1,22 @@
 <template>
-  <div v-if="post">
+  <UContainer v-if="post">
     <h1>{{ post.name }}</h1>
     <p><b>Description:</b> {{ post.description }}</p>
     <ul>
-      <li>Abmetric Index: [{{ post.abmetricIndex }}]</li>
+      <li>Abmetric Index: [{{ post.abmetricIndex.toFixed(2) }}]</li>
     </ul>
-  </div>
+  </UContainer>
+  <UContainer v-else>
+    <h1>sorry</h1>
+    <p>we couldn't find that entry</p>
+  </UContainer>
 </template>
 
 <script setup lang="ts">
-import { capitalize } from "vue";
-
 const route = useRoute();
-// eslint-disable-next-line @stylistic/quotes
-const pageId = computed(() => 'numbers-' + route.path);
+const pageId = computed(() => "numbers-" + route.path);
 const { data: post } = await useAsyncData(pageId, () => queryCollection("numbers")
-  .where("name", "=", capitalize(route.path.slice(route.path.lastIndexOf("/") + 1)))
+  .path(route.path)
   .first());
 
 useSeoMeta({

@@ -2,13 +2,9 @@ import { defineCollection, defineContentConfig, z } from "@nuxt/content";
 
 export default defineContentConfig({
   collections: {
-    content: defineCollection({
-      type: "page",
-      source: "**/*.md",
-    }),
     numbers: defineCollection({
-      type: "data",
-      source: "content/entries/*.yml",
+      type: "page",
+      source: "entries/*.yml",
       schema: z.strictObject({
         milestone: z.optional(z.enum([
           "none",
